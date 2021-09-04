@@ -1,8 +1,26 @@
 plugins {
     id 'java-library'
+    id 'maven-publish'
+}
+
+dependencies {
+    implementation gradleApi() //必须
+    implementation localGroovy() //用groovy语言开发需要依赖
+    implementation "com.android.tools.build:gradle:4.0.0"
 }
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_7
     targetCompatibility = JavaVersion.VERSION_1_7
+}
+
+publishing {
+    publications{
+        TestTask(MavenPublication) {
+            from components.java
+            groupId  'com.zzds.plugin'
+            artifactId  'mygraldeplugin'
+            version  '1.0.0'
+        }
+    }
 }
