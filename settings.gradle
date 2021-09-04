@@ -1,0 +1,3 @@
+rootProject.name = "我的Gradle插件Demo"
+include ':app'
+include ':plugin_gradle'
