@@ -9,7 +9,6 @@ import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 import org.gradle.api.Task;
 
-import java.util.function.Consumer;
 
 public class MyPlugin implements Plugin<Project> {
 
@@ -23,7 +22,7 @@ public class MyPlugin implements Plugin<Project> {
             @Override
             public void execute(Project project) {
                 String testName = myConfig.testName;
-                System.out.println("配置的name:" + testName);
+                System.out.println("配置的dddname:" + testName);
 
                 AppExtension appExtension1 = (AppExtension) project
                         .getExtensions().getByName("android");

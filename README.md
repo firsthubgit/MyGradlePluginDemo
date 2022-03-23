@@ -1,3 +1,11 @@
+## 如何调试本项目
+
+1.先执行gradlew publishToML发布插件
+
+2.再执行gradlew tasks 可以看出修改MyPlugins后的效果
+
+
+
 ## 步骤
 
 在新建的App项目中做如下操作：
@@ -52,7 +60,7 @@ publishing {
 repositories {
         google()
         jcenter()
-        mavenLocal()
+        mavenLocal() //默认目录是/Users/你的用户名/.m2/repository
 }
 ```
 

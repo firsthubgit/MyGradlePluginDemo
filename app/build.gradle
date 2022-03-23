@@ -4,7 +4,7 @@ plugins {
 }
 
 myconfig{
-    testName '我的自定义1111'
+    testName '我的自定义222'
 }
 
 android {

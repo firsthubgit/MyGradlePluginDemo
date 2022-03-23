@@ -3,7 +3,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        mavenLocal()
+        mavenLocal() //默认目录是/Users/你的用户名/.m2/repository
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.0"
@@ -17,7 +17,6 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        mavenLocal()
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
